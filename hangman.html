@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h1>Hangman</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <div id="ergebnis"></div>
+            <div id="versuche">Anzahl verbleibende Versuche: 6</div>
+            <br>
+            <label for="eingabe">Buchstabe eingeben</label>
+            <input id="eingabe" type="text">
+            <button class="btn-large" id="btnEingabe">Raten</button>
+
+        </div>
+        <div class="col s6">
+            <p style="white-space: pre-wrap; visibility: visible"  id="galgen6">
+
+            <p style="white-space: pre-wrap; visibility: hidden" id="galgen5">
+                                    |
+                                    |
+                                    |
+                                    |
+                                    |
+                =========</p>
+            <p style="white-space: pre-wrap; visibility: hidden" id="galgen4">
+                                +---+
+                                |   |
+                                    |
+                                    |
+                                    |
+                                    |
+                =========</p>
+            <p style="white-space: pre-wrap; visibility: hidden" id="galgen3">
+                                +---+
+                                |   |
+                                O   |
+                                    |
+                                    |
+                                    |
+                =========</p>
+            <p style="white-space: pre-wrap; visibility: hidden" id="galgen2">
+                                +---+
+                                |   |
+                                O   |
+                                |   |
+                                    |
+                                    |
+                =========</p>
+
+            <p style="white-space: pre-wrap; visibility: hidden" id="galgen1">
+                                +---+
+                                |   |
+                                O   |
+                               /|   |
+                               /    |
+                                    |
+                =========</p>
+            <p style="white-space: pre-wrap; visibility: hidden" id="galgen0">
+                                +---+
+                                |   |
+                                O   |
+                               /|\  |
+                               / \  |
+                                    |
+                =========</p>
+        </div>
+    </div>
+    <script src="hangman.js"></script>
+</body>
+</html>
